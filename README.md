@@ -16,7 +16,18 @@ On the frontend:
   * Output from the pty process on the backend is fed into it.
   * Input from the browser is passed via websocket to the pty's input
 
+## Quick Deploy with uWSGI
+```
+uwsgi --http :4555 --gevent 1000 --http-websockets --master --wsgi-file wsgi.py --callable app --stats 127.0.0.1:9191 
+```
+uWSGI options
+  --http :4555       Tell uWSGI to run a http server with the callable wsgi application
+  --wsgi-file        Relative/absolute path to the wsgi file that imports the callable FLASK application
+  --callable         Callable Flask application
+  --http-websockets  Enable web socket communication
+
 ## Nginx uwsgi Deployment
+Please make use of the pyxterm.ini file for uWSGI configuration and the nginx.conf file for NGINX configuration.
 
 
 ### Option 2 (Quickest but not recommended)
