@@ -1,5 +1,5 @@
 # NOTE: This readme is a work in progress, will get back to it when there is time.
-# pyxterm.js (Customized for TSN BOX Web application)
+# pyxterm.js (Customized to run with flask-socket-io, uwsgi and behind NGINX)
 
 ## How does this work?
 See [pyxterm](https://github.com/cs01/pyxterm.js/blob/master/README.md)
