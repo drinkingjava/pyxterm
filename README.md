@@ -2,7 +2,7 @@
 # pyxterm.js (Customized to run with flask-socket-io, uwsgi and behind NGINX)
 
 ## How does this work?
-See [pyxterm](https://github.com/cs01/pyxterm.js/blob/master/README.md)
+See [pyxterm](https://github.com/cs01/pyxterm.js/blob/master/README.md) for the original idea that this is based on.
 
 In summary:
 * A [Flask](http://flask.pocoo.org/) server is running
